@@ -18,7 +18,9 @@ namespace GradeBook
         {
             get
             {
-                return Grades.Average();
+                if (Grades.Count!=0) { return Grades.Average(); }
+                else return 0;
+                
             }
         }
         [JsonIgnore]

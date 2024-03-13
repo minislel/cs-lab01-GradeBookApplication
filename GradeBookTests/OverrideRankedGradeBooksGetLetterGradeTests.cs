@@ -208,7 +208,8 @@ namespace GradeBookTests
             gradeBook.GetType().GetProperty("Students").SetValue(gradeBook, students);
 
             //Test if B is given when input grade is between the top 20 and 40%.
-            Assert.True((char)method.Invoke(gradeBook, new object[] { 75 }) == 'B', "`GradeBook.GradeBooks.RankedGradeBook.GetLetterGrade` didn't give an B to students between the top 20 and 40% of the class.");
+            
+            Assert.True((char)method.Invoke(gradeBook, new object[] { 75 }) == 'B'," `GradeBook.GradeBooks.RankedGradeBook.GetLetterGrade` didn't give an B to students between the top 20 and 40% of the class.");
         }
 
         /// <summary>
