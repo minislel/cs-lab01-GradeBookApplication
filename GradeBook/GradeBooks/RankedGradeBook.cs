@@ -11,7 +11,7 @@ namespace GradeBook.GradeBooks
     {
         public RankedGradeBook(string name, bool isWeight) : base(name, isWeight)
         {
-            isWeighted = isWeight;
+            IsWeighted = isWeight;
             Type = GradeBookType.Ranked;
             Name = name;
         }
